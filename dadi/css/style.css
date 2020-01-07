@@ -1,0 +1,41 @@
+body{
+  background-color: violet;
+}
+
+.wrapper{
+  content: "";
+  display: table;
+  clear: both;
+  width: 100%;
+}
+
+.container_left{
+  float: left;
+  text-align: center;
+  width: 50%;
+}
+
+.container_right{
+  float: right;
+  text-align: center;
+  width: 50%;
+}
+
+#result{
+  margin-top: 50px;
+  text-align: center;
+}
+
+.btn{
+  margin: 10px;
+  padding: 5px;
+  border: 1px solid black;
+  border-radius: 3px;
+  font-weight: bold;
+  background-color: lightgrey;
+  cursor: pointer;
+}
+
+.play_button{
+  text-align: center;
+}

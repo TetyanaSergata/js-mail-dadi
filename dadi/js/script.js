@@ -1,27 +1,24 @@
-// alert('Ciao');
+// alert('ciao');
+// var buttonPlay = document.getElementById('play');
+// buttonPlay.addEventListener('click',
+function dado(){
+  var lancioDado1 = Math.floor(Math.random() * 6) + 1;
+  var lancioDado2 = Math.floor(Math.random() * 6) + 1;
+  var dadoResult;
 
-// Esercizio 1
-// Lista Utenti registrati
-var listMail = ['marco@libero.it', 'andrea@yahoo.com', 'lisa@libero.it', 'chiara@gmail.com'];
-// E-mail dell'utente
-var mailUser = prompt('Inserisci la tua e-mail');
-console.log(mailUser);
-
-var permit = false;
-// Ciclo for
-for( var i=0; i<listMail.length; i++){
-  var mail = listMail[i];
-  // console.log(mail);
-  if(mailUser==mail){
-    permit = true;
-    // console.log(mail);
+  if (lancioDado1 > lancioDado2 ){
+    dadoResult = 'Ha vinto il giocatore 1';
+  }else if(lancioDado1 < lancioDado2){
+    dadoResult = 'Ha vinto il giocatore 2';
+  }else{
+    dadoResult = 'Pareggio';
   }
-}
-// console.log(permit);
-if (permit==false) {
-  alert('Accesso non consentito');
-  console.log('Accesso non consentito');
-} else {
-  console.log('Accesso consentito');
+document.getElementById('result').innerHTML= dadoResult;
 
+  document.getElementById('first_player').innerHTML='Il tuo risultato: ' + lancioDado1;
+  document.getElementById('second_player').innerHTML='Il tuo risultato: ' + lancioDado2;
+  console.log('Il tuo numero:' + lancioDado1);
+  console.log('Il tuo numero:' + lancioDado2);
 }
+// )
+dado();
