@@ -12,9 +12,16 @@ var permit = false;
 for( var i=0; i<listMail.length; i++){
   var mail = listMail[i];
   // console.log(mail);
-  if(mailUser==listMail){
+  if(mailUser==mail){
     permit = true;
-    console.log(mail);
+    // console.log(mail);
   }
 }
-console.log(permit);
+// console.log(permit);
+if (permit==false) {
+  alert('Accesso non consentito');
+  console.log('Accesso non consentito');
+} else {
+  console.log('Accesso consentito');
+
+}
