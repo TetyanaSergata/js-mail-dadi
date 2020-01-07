@@ -11,10 +11,10 @@ var permit = false;
 // Ciclo for
 for( var i=0; i<listMail.length; i++){
   var mail = listMail[i];
-  console.log(mail);
+  // console.log(mail);
   if(mailUser==listMail){
     permit = true;
-    console.log(permit);
+    console.log(mail);
   }
 }
 console.log(permit);
